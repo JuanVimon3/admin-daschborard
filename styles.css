@@ -5,26 +5,80 @@ html, body {
     display: grid;
     text-align: center;
     height: 100%;
-    padding: 16px;
+    width: 100vp;
     box-sizing: border-box;
 }
 
 .header {
-    grid-column: 2 / 7;
+    grid-column: 2 / 15;
     background-color: antiquewhite;
 }
 
 .sidebar{
-    background-color: rgb(23, 51, 78);
+    display: grid;
+    background-color: rgb(45, 74, 102);
     grid-row: 1/7;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
 }
 
 .cardContainer{
     background-color: rgb(161, 121, 121);
-    grid-column: 2/7;
+    grid-column: 2/15;
     grid-row: 2/ 7;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding-bottom: 0;
+}
+
+h2 img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    padding: 15px;
+    filter: invert(1);
 }
 
 .card{
 
+}
+
+.pagesList ul {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.pagesList ul img{
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    padding: 10px;
+    filter: invert(1);
+}
+
+.settingsList ul {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.settingsList ul img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: invert(1);
+    padding: 10px;
 }
