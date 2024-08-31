@@ -1,11 +1,13 @@
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;;
 }
 .container{
     display: grid;
     text-align: center;
     height: 100%;
-    width: 100vp;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -17,7 +19,7 @@ html, body {
 .sidebar{
     display: grid;
     background-color: rgb(45, 74, 102);
-    grid-row: 1/7;
+    grid-row: 1 / 7;
     color: aliceblue;
     font-size: 20px;
 }
@@ -85,6 +87,9 @@ h2 img {
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .name h4 {
@@ -93,7 +98,8 @@ h2 img {
 }
 
 .searchBar{
-    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .searchBar img {
@@ -103,7 +109,6 @@ h2 img {
 }
 
 .searchBar input {
-    flex: 1;
     padding: 8px;
     border: none;
     border-radius: 5px;
@@ -112,9 +117,29 @@ h2 img {
     color: black;
 }
 
-.pages button {
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.pages ul button {
     background-color: rgb(45, 74, 102);
     color: aliceblue;
     border: none;
     border-radius: 5px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px
 }
