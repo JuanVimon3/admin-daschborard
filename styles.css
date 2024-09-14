@@ -63,6 +63,7 @@ html, body {
 }
 
 .pages ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -153,7 +154,7 @@ button {
     width: 100%;
     box-sizing: border-box;
     justify-content: center;
-    align-content: start;
+    align-content: center;
 }
 
 /* Card */
